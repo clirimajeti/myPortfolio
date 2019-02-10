@@ -120,12 +120,28 @@ nav .menu-item a {
 }
 
 section {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   text-align: center;
 }
 
 section h1 {
   font-family: 'Open Sans';
   font-weight: 200;
+}
+
+section .desc {
+  font-family: 'Kalam', cursive;
+  position: relative;
+  overflow: hidden;
+  background: -webkit-gradient(linear, left top, right top, from(#000), color-stop(#fff), to(#000));
+  background: linear-gradient(90deg, #000, #fff, #000);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  -webkit-animation: animate 4.5s ease-in-out infinite;
+          animation: animate 4.5s ease-in-out infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
 }
 
 section h3 {
@@ -173,5 +189,54 @@ section.projects .project:hover .proj-details {
 
 .prog-skill {
   margin-bottom: -1rem;
+}
+
+@-webkit-keyframes animate {
+  0% {
+    background-position: -500%;
+  }
+  50% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 500%;
+  }
+}
+
+@keyframes animate {
+  0% {
+    background-position: -500%;
+  }
+  50% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 500%;
+  }
+}
+
+.myEmail {
+  font-size: 48px;
+  margin: 2em auto;
+  font-family: 'Kalam', cursive;
+}
+
+.myEmail a {
+  color: white;
+}
+
+.social i {
+  color: white;
+  padding: 30px;
+  border-radius: 50%;
+  font-size: 55px;
+  background-color: rgba(0, 0, 0, 0.1);
+  -webkit-transition: 700ms all cubic-bezier(0.55, 0.085, 0.68, 0.53);
+  transition: 700ms all cubic-bezier(0.55, 0.085, 0.68, 0.53);
+}
+
+.social i:hover {
+  -webkit-box-shadow: 0px 0px 70px -15px #d4d4d4;
+          box-shadow: 0px 0px 70px -15px #d4d4d4;
 }
 /*# sourceMappingURL=main.css.map */

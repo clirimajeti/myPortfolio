@@ -53,10 +53,22 @@ nav{
 }
 
 section{
+    box-sizing: border-box;
     text-align: center;
     & h1{
         font-family:'Open Sans';
         font-weight: 200;
+    }
+    & .desc{
+        font-family: 'Kalam', cursive;
+        position: relative;
+        overflow: hidden;
+        background: linear-gradient(90deg, #000, #fff, #000);
+        background-repeat: no-repeat;
+        background-size: 80%;
+        animation: animate 4.5s ease-in-out infinite;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: rgba(255, 255, 255, 0);
     }
     & h3{
         font-family: 'Kalam', cursive;
@@ -97,9 +109,47 @@ section{
       }
     }
 }
-
 .prog-skill{
     margin-bottom:-1rem;
 }
+
+@keyframes animate {
+    0% {
+      background-position: -500%;
+    }
+    50% {
+        background-position: 0%;
+    }
+    100% {
+      background-position: 500%;
+    }
+  }
+  .myEmail{
+      font-size:48px;
+      margin: 2em auto;
+      font-family: 'Kalam', cursive;
+      & a{
+          color:white;
+      }
+  }
+ .social{
+        & i{
+            color:white;
+            padding: 30px;
+            border-radius: 50%;
+            font-size: 55px;
+            background-color:rgba($color: #000000, $alpha: 0.1);
+            transition: 700ms all cubic-bezier(0.55, 0.085, 0.68, 0.53) ;
+        &:hover{
+            box-shadow: 0px 0px 70px -15px #d4d4d4;
+        }
+        }
+        
+    }
+
+  
+
+
+
 
 
