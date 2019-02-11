@@ -13,17 +13,16 @@ body{
     color:#d4d4d4;
     transition: all 300ms ease;
 }
-nav{
-    display: inline;
-}
 #menu{
     width:100%;
     display: flex;
     overflow: visible;
     position: fixed!important;
-    top:15px!important;
-    left:20px;
+    top:20px!important;
+    left:50px;
+    right:50px;
     z-index: 99999;
+    
     & .menu-item{
         padding:10px;    
         font-family:'Open Sans';
@@ -34,6 +33,25 @@ nav{
         }   
     }
 }
+
+@media screen and (max-width: 720px){
+    #menu{
+        left: 25px;
+    }
+  }
+
+@media screen and (max-width: 420px){
+    #menu{
+        left: 25px;
+    }
+  }
+
+@media screen and (max-width: 350px){
+    #menu{
+        left: 5px;
+    }
+  }
+
 .arrow{
     position: relative;
     width:100px;
@@ -166,7 +184,7 @@ section{
         background: #ccc;
         border-radius: 4em;
         height: 2.5em;
-        right:20%;
+        right:0;
         position: absolute;
         top: 30px;
         transform: translate(-50%, -50%);
@@ -176,6 +194,13 @@ section{
         .toggle{
             top: 90px;
             right: 40vw;
+        }
+      }
+
+      @media screen and (max-width: 320px){
+        .toggle{
+            top: 60px;
+            right: 32vw;
         }
       }
       
