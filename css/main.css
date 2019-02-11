@@ -38,7 +38,7 @@ nav {
 }
 
 #menu .menu-item a {
-  font-size: 24px;
+  font-size: 18px;
   color: #d4d4d4;
 }
 
@@ -229,6 +229,12 @@ section.projects .project:hover .proj-details {
   color: white;
 }
 
+@media screen and (max-width: 720px) {
+  .myEmail {
+    font-size: 32px;
+  }
+}
+
 .social i {
   color: white;
   padding: 30px;
@@ -260,7 +266,7 @@ section.projects .project:hover .proj-details {
 @media screen and (max-width: 720px) {
   .toggle {
     top: 90px;
-    right: 50vw;
+    right: 40vw;
   }
 }
 
