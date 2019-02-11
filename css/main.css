@@ -179,7 +179,7 @@ section.projects .project {
 }
 
 section.projects .project .proj-preview {
-  height: 210px;
+  height: auto;
   width: 100%;
   -o-object-fit: fill;
      object-fit: fill;
