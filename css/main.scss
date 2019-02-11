@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Caveat|Indie+Flower|Kalam|Open+Sans:300,400');
+@import url(../libs/@fortawesome/fontawesome-free/scss/fontawesome.scss);
 a, a:focus, a:hover, a:visited {
     text-decoration: none;
-    color:black;
 }
 body{
     background-image: url(../img/sky.png);
@@ -10,23 +10,27 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     color:#d4d4d4;
+    transition: all 300ms ease;
 }
-
 nav{
+    display: inline;
+}
+#menu{
+    width:100%;
     display: flex;
-    overflow: hidden!important;
+    overflow: visible;
     position: fixed!important;
     top:15px!important;
     left:20px;
     z-index: 99999;
     & .menu-item{
-        padding:10px;
-        font-size: 24px;
+        padding:10px;    
         font-family:'Open Sans';
         font-weight: 200;
 
         & a{
-        color:#d4d4d4;
+            font-size: 24px;
+            color:#d4d4d4;
         }   
     }
 }
@@ -128,9 +132,7 @@ section{
       font-size:48px;
       margin: 2em auto;
       font-family: 'Kalam', cursive;
-      & a{
-          color:white;
-      }
+      color:white;
   }
  .social{
         & i{
@@ -146,6 +148,75 @@ section{
         }
         
     }
+
+    /// toggle
+
+    @mixin circle($i) {
+        border-radius: 50%;
+        height: $i;
+        width: $i;
+      }
+      .toggle {
+        z-index: 999;
+        background: #ccc;
+        border-radius: 4em;
+        height: 2.5em;
+        right:20%;
+        position: absolute;
+        top: 30px;
+        transform: translate(-50%, -50%);
+        width: 4em;
+      }
+      @media screen and (max-width: 720px){
+        .toggle{
+            top: 90px;
+            right: 50vw;
+        }
+      }
+      
+      .ball:before,
+      .night:before {
+        align-items: center;
+        display: flex;
+        font-family: "Font Awesome 5 Free";
+        height: 100%;
+        justify-content: center;
+      }
+      
+      .ball {
+        background: #333;
+        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+        cursor: pointer;
+        margin-top: 0.25em;
+        transform: translateX(25%);
+        transition: all 300ms ease;
+        @include circle(2em);
+      
+        &:before {
+          color: #fff;
+          content: "\f186";
+        }
+      }
+      
+      .night {
+        background: #fff;
+        transform: translateX(75%);
+        &:before {
+          color: #333;
+          content: "\f185";
+        }
+      }
+      .black {
+        background-image:url(../img/sunny-day-white-sky-4k-time-lapse_ekyxov3___F0000.png);
+        color:#333 !important;
+        & #menu .menu-item a {
+            color:#333;
+        }
+        & a{
+            color:#333;
+        }
+
+      }
 
   
 

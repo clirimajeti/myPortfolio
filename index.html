@@ -13,15 +13,19 @@
     <link rel="icon" type="image/png" sizes="16x16" href=".img/favicon/favicon-16x16.png">
     
     <title>ÇA Portfolio</title>
+
+
 </head>
 <body>
-    <nav id="#menu">
-                <div class="menu-item"><a data-menuanchor="section1" href="#section1">Home</a></div>
-                <div class="menu-item"><a data-menuanchor="section2" href="#section2">Skills</a></div>
-                <div class="menu-item"><a data-menuanchor="section3" href="#section3">Projects</a></div>
-                <div class="menu-item"><a data-menuanchor="section4" href="#section4">Contact</a></div>
-    </nav>
-    <div class="container-fluid" id="fullpage">
+        <nav id="menu">
+                    <div class="menu-item"><a data-menuanchor="section1" href="#section1">Home</a></div>
+                    <div class="menu-item"><a data-menuanchor="section2" href="#section2">Skills</a></div>
+                    <div class="menu-item"><a data-menuanchor="section3" href="#section3">Projects</a></div>
+                    <div class="menu-item"><a data-menuanchor="section4" href="#section4">Contact</a></div>
+                    <div class="toggle"><div class="ball"></div></div>     
+        </nav> 
+
+    <div class="container" id="fullpage">
         <section class="intro section " id="#section1">         
                 <h1 >Hi I'm Çlirim Ajeti</h1>
                 <h3 class="desc">this is my Portfolio</h3>
@@ -183,8 +187,11 @@
 
 
         <section class="contact section">
-            <h1 class="contact-me">Contact</h1>
-            <p class="myEmail"><a href="mailto:clirimajeti@gmail.com">clirimajeti@gmail.com</a></p>
+            <div class="row">
+                <div class="col-md-12"><h1 class="contact-me">Contact</h1></div> 
+                <div class="col-md-12"><a class="myEmail" href="mailto:clirimajeti@gmail.com">clirimajeti@gmail.com</a></div>
+            </div>
+            
             <div class="row d-flex justify-content-center">
                 <div class=" col-md-3 text-center social">
                     <a href="https://github.com/clirimajeti" class="social-link"><i class="fab fa-github"></i></a>
@@ -204,17 +211,6 @@
     <script src="./libs/jquery/dist/jquery.min.js"></script>
     <script src="./libs/fullpage.js/dist/fullpage.min.js"></script>
     <script src="./libs/bootstrap/dist/js/bootstrap.js"></script>
-    <script src="./libs/covervid.min.js"></script>
-
-    <script>
-        new fullpage('#fullpage', {
-                autoScrolling:true,
-                responsiveWidth:480,
-                anchors: ['section1', 'section2', 'section3', 'section4'],
-                menu: '#menu',
-                paddingTop: '5em',
-                });
-            fullpage_api.setAllowScrolling(true);
-    </script>
+    <script src="./js/app.js"></script>
 </body>
 </html>
