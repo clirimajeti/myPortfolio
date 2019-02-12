@@ -35,7 +35,7 @@ body {
 }
 
 #menu .menu-item a {
-  font-size: 18px;
+  font-size: 1.125em;
   color: #d4d4d4;
 }
 
@@ -179,12 +179,12 @@ section .progress {
 }
 
 section.projects h5 {
-  font-size: 22px;
+  font-size: 1.375em;
   font-family: 'Kalam', cursive;
 }
 
 section.projects h6 {
-  font-size: 14px;
+  font-size: 0.875em;
   font-family: 'Open Sans';
 }
 
@@ -257,7 +257,7 @@ section.projects .project:hover .proj-details {
 }
 
 .myEmail {
-  font-size: 48px;
+  font-size: 3.000em;
   margin: 2em auto;
   font-family: 'Kalam', cursive;
   color: white;
@@ -265,7 +265,7 @@ section.projects .project:hover .proj-details {
 
 @media screen and (max-width: 720px) {
   .myEmail {
-    font-size: 32px;
+    font-size: 2em;
   }
 }
 
@@ -273,7 +273,7 @@ section.projects .project:hover .proj-details {
   color: white;
   padding: 30px;
   border-radius: 50%;
-  font-size: 55px;
+  font-size: 3.438em;
   background-color: rgba(0, 0, 0, 0.1);
   -webkit-transition: 700ms all cubic-bezier(0.55, 0.085, 0.68, 0.53);
   transition: 700ms all cubic-bezier(0.55, 0.085, 0.68, 0.53);
