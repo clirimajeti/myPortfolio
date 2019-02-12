@@ -5,7 +5,7 @@ a, a:focus, a:hover, a:visited {
 }
 
 body {
-  background-image: url(../img/sky.png);
+  background-image: url(../img/sky.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -363,7 +363,7 @@ header.container {
 }
 
 .black {
-  background-image: url(../img/sunny-day-white-sky-4k-time-lapse_ekyxov3___F0000.png);
+  background-image: url(../img/sky_day.jpg);
   color: #333 !important;
 }
 
