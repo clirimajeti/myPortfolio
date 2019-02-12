@@ -20,11 +20,12 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: inherit;
+      -ms-flex-pack: inherit;
+          justify-content: inherit;
   overflow: visible;
   position: fixed !important;
   top: 20px !important;
-  left: 50px;
-  right: 50px;
   z-index: 99999;
 }
 
@@ -41,19 +42,23 @@ body {
 
 @media screen and (max-width: 720px) {
   #menu {
-    left: 25px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
   }
 }
 
 @media screen and (max-width: 420px) {
   #menu {
-    left: 25px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
-}
-
-@media screen and (max-width: 350px) {
-  #menu {
-    left: 5px;
+  #menu .menu-item {
+    padding: 10px;
+    font-weight: 600;
   }
 }
 
@@ -265,14 +270,17 @@ section.projects .project:hover .proj-details {
           box-shadow: 0px 0px 70px -15px #d4d4d4;
 }
 
+header.container {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+}
+
 .toggle {
   z-index: 999;
   background: #ccc;
   border-radius: 4em;
   height: 2.5em;
-  right: 0;
-  position: absolute;
-  top: 30px;
+  margin: 30px auto;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   width: 4em;
@@ -280,8 +288,10 @@ section.projects .project:hover .proj-details {
 
 @media screen and (max-width: 720px) {
   .toggle {
-    top: 90px;
-    right: 40vw;
+    position: absolute;
+    top: 60px;
+    right: 35%;
+    left: 45%;
   }
 }
 
@@ -343,11 +353,17 @@ section.projects .project:hover .proj-details {
   color: #333 !important;
 }
 
-.black #menu .menu-item a {
+@media screen and (max-width: 420px) {
+  .black header #menu {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+}
+
+.black header #menu .menu-item a {
   color: #333;
 }
 
-.black a {
+.black header #menu a {
   color: #333;
 }
 /*# sourceMappingURL=main.css.map */

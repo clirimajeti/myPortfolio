@@ -16,11 +16,10 @@ body{
 #menu{
     width:100%;
     display: flex;
+    justify-content:inherit;
     overflow: visible;
     position: fixed!important;
     top:20px!important;
-    left:50px;
-    right:50px;
     z-index: 99999;
     
     & .menu-item{
@@ -36,20 +35,22 @@ body{
 
 @media screen and (max-width: 720px){
     #menu{
-        left: 25px;
+      justify-content:start;
     }
   }
 
 @media screen and (max-width: 420px){
     #menu{
-        left: 25px;
-    }
-  }
+      width:100%;
+      background-color:rgba($color: #000000, $alpha: 0.8);
+      justify-content: center;
 
-@media screen and (max-width: 350px){
-    #menu{
-        left: 5px;
+      & .menu-item{
+        padding:10px;    
+        font-weight: 600;  
     }
+    }
+    
   }
 
 .arrow{
@@ -173,7 +174,10 @@ section{
     }
 
     /// toggle
-
+    header.container{
+      padding-right: 0!important; 
+      padding-left: 0!important;
+    }
     @mixin circle($i) {
         border-radius: 50%;
         height: $i;
@@ -184,16 +188,16 @@ section{
         background: #ccc;
         border-radius: 4em;
         height: 2.5em;
-        right:0;
-        position: absolute;
-        top: 30px;
+        margin:30px auto;
         transform: translate(-50%, -50%);
         width: 4em;
       }
       @media screen and (max-width: 720px){
         .toggle{
-            top: 90px;
-            right: 40vw;
+            position: absolute;
+            top: 60px;
+            right: 35%;
+            left: 45%;
         }
       }
 
@@ -239,13 +243,19 @@ section{
       .black {
         background-image:url(../img/sunny-day-white-sky-4k-time-lapse_ekyxov3___F0000.png);
         color:#333 !important;
-        & #menu .menu-item a {
-            color:#333;
+        & header{
+          & #menu{ 
+            @media screen and (max-width: 420px){
+            background-color:rgba(255,255,255,0.5);
+           }
+            & .menu-item a {
+                  color:#333;
+              }
+              & a{
+                  color:#333;
+              }
+          }
         }
-        & a{
-            color:#333;
-        }
-
       }
 
   
