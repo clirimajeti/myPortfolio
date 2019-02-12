@@ -100,9 +100,20 @@ section{
         margin:20px 10px;
     }
     &.projects{      
-        
+        h5{
+          font-size:22px;
+          font-family: 'Kalam', cursive;
+        }
+        h6{
+          font-size:14px;
+          font-family: 'Open Sans';
+        }
         & .project{
-            margin:15px 0 ;
+            margin:15px 0;
+            & video{
+                width: 100%;
+                height: auto;
+            }
             & .proj-preview{
                 height: auto;
                 width:100%;

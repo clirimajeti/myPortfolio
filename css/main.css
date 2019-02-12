@@ -179,8 +179,23 @@ section .progress {
   margin: 20px 10px;
 }
 
+section.projects h5 {
+  font-size: 22px;
+  font-family: 'Kalam', cursive;
+}
+
+section.projects h6 {
+  font-size: 14px;
+  font-family: 'Open Sans';
+}
+
 section.projects .project {
   margin: 15px 0;
+}
+
+section.projects .project video {
+  width: 100%;
+  height: auto;
 }
 
 section.projects .project .proj-preview {
