@@ -6,7 +6,8 @@ a, a:focus, a:hover, a:visited {
 }
 body{
     background-image: url(../img/sky.jpg);
-    background-position: center;
+    background-position: center center;
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
     color:#d4d4d4;
@@ -205,15 +206,15 @@ section{
       @media screen and (max-width: 720px){
         .toggle{
             position: absolute;
-            top: 60px;
-            right: 35%;
+            top: 55px;
+            right: 27%;
             left: 45%;
         }
       }
 
       @media screen and (max-width: 320px){
         .toggle{
-            top: 60px;
+            top: 55px;
             right: 32vw;
         }
       }
