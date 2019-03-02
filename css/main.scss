@@ -6,6 +6,7 @@ a, a:focus, a:hover, a:visited {
     text-decoration: none;
 }
 html,body{
+  scroll-behavior: smooth;
   margin:0;
   padding:0;
 }
