@@ -272,7 +272,14 @@ section.projects .project .proj-details .icon-proj {
 }
 
 .prog-skill {
-  margin-bottom: -1rem;
+  text-align: left;
+  margin: 5px;
+  font-size: 1.5rem;
+}
+
+.prog-skill span > i {
+  padding: 15px;
+  font-size: 2.5rem;
 }
 
 @-webkit-keyframes animate {
