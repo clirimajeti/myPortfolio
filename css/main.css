@@ -272,9 +272,7 @@ section.projects .project .proj-details .icon-proj {
 }
 
 .prog-skill {
-  text-align: left;
-  margin: 5px;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 .prog-skill span > i {
